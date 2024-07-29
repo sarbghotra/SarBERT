@@ -1,0 +1,97 @@
+Naive Bayes Classification Report:
+              precision    recall  f1-score   support
+
+    negative       0.86      0.09      0.16      1503
+     neutral       0.73      0.66      0.69      5901
+    positive       0.75      0.90      0.82      9463
+
+    accuracy                           0.74     16867
+   macro avg       0.78      0.55      0.56     16867
+weighted avg       0.75      0.74      0.71     16867
+
+Accuracy: 0.7426928321574673
+Precision: 0.7510637388725705
+Recall: 0.7426928321574673
+F1-Score: 0.7141137945397869
+
+Logistic Regression Classification Report:
+              precision    recall  f1-score   support
+
+    negative       0.65      0.18      0.29      1503
+     neutral       0.76      0.92      0.84      5901
+    positive       0.90      0.89      0.90      9463
+
+    accuracy                           0.84     16867
+   macro avg       0.77      0.67      0.67     16867
+weighted avg       0.83      0.84      0.82     16867
+
+Accuracy: 0.8380862038299638
+Precision: 0.8320502454597949
+Recall: 0.8380862038299638
+F1-Score: 0.8207895305801667
+
+Linear SVM Classification Report:
+              precision    recall  f1-score   support
+
+    negative       0.68      0.18      0.29      1503
+     neutral       0.76      0.94      0.84      5901
+    positive       0.92      0.88      0.90      9463
+
+    accuracy                           0.84     16867
+   macro avg       0.79      0.67      0.67     16867
+weighted avg       0.84      0.84      0.82     16867
+
+Accuracy: 0.8414062963182546
+Precision: 0.8403437433860392
+Recall: 0.8414062963182546
+F1-Score: 0.8239058342328728
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+C:\Users\coolb\anaconda3\Lib\site-packages\transformers\optimization.py:457: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+Epoch 1/4
+----------
+Training BERT: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2460/2460 [12:23<00:00,  3.31it/s] 
+Train loss 0.26778023849048355 accuracy 0.9056512679778422
+Evaluating BERT: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1055/1055 [01:54<00:00,  9.22it/s]
+Val   loss 0.13476636191450447 accuracy 0.9557716250666982
+
+Epoch 2/4
+----------
+Training BERT: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2460/2460 [12:27<00:00,  3.29it/s] 
+Train loss 0.09488635656413928 accuracy 0.970396910098084
+Evaluating BERT: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1055/1055 [01:54<00:00,  9.22it/s]
+Val   loss 0.11428665926313619 accuracy 0.9674512361415782
+
+Epoch 3/4
+----------
+Training BERT: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2460/2460 [12:24<00:00,  3.31it/s] 
+Train loss 0.055302244943648965 accuracy 0.982060273415663
+Evaluating BERT: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1055/1055 [01:54<00:00,  9.22it/s]
+Val   loss 0.12235301565464422 accuracy 0.9647240173119108
+
+Epoch 4/4
+----------
+Training BERT: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2460/2460 [12:24<00:00,  3.31it/s] 
+Train loss 0.03957285732370413 accuracy 0.9878792498856533
+Evaluating BERT: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1055/1055 [01:54<00:00,  9.21it/s]
+Val   loss 0.11860996007489513 accuracy 0.9673919487757159
+
+Testing BERT: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1055/1055 [01:44<00:00, 10.13it/s] 
+BERT Classification Report:
+              precision    recall  f1-score   support
+
+    negative       0.85      0.93      0.89      1503
+     neutral       0.98      0.96      0.97      5901
+    positive       0.98      0.98      0.98      9463
+
+    accuracy                           0.97     16867
+   macro avg       0.94      0.96      0.95     16867
+weighted avg       0.97      0.97      0.97     16867
+
+Accuracy: 0.9673919487757159
+Precision: 0.9685598259027154
+Recall: 0.9673919487757159
+F1-Score: 0.9677719652106858
+PS C:\Users\coolb> 
